@@ -11,9 +11,6 @@ jobs:
     steps:
       - name: check out
         uses: actions/checkout@v2
-
-      - name: Change working directory
-        run: cd ProductApp
     
       - name: dotnet framework setup
         uses: actions/setup-dotnet@v1
