@@ -21,7 +21,7 @@ jobs:
           dotnet-version: '5.0.x'
       
       - name: dotnet restore packages
-        run: dotnet --restore
+        run: dotnet restore
         
       
       - name: dotnet build
