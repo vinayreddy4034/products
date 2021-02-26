@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProductApp
+namespace WeatherForcastApp
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace ProductApp
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProductApp", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WeatherForcastApp", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace ProductApp
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProductApp v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WeatherForcastApp v1"));
             }
 
             app.UseHttpsRedirection();
