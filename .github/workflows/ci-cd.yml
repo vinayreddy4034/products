@@ -13,8 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Change working directory
-        working-directory: ./ProductApp
-        run: cp .env.dev .env
+        run: cd ProductApp
     
       - name: dotnet framework setup
         uses: actions/setup-dotnet@v1
